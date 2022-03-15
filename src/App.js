@@ -1,24 +1,31 @@
-import logo from './logo.svg';
+// import All required things for this page
+import React from 'react';
 import './App.css';
+import Home from "./Components/Home"
+import Status from './Components/Status';
+import Update from './Components/Update';
+import {BrowserRouter as Router,Switch,Routes,Route} from 'react-router-dom'
+
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // Use react router to navigate different component through button
+   
+    <Router>
+
+
+      <>
+      
+      <Routes>
+        <Route  path='/' element={<Home />}/>
+        <Route  path='/status' element={<Status />}/>
+        <Route  path='/update' element={<Update />}/>
+        
+      </Routes>
+      </>
+    </Router>
+   
   );
 }
 
