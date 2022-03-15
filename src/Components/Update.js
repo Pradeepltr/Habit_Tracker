@@ -109,6 +109,9 @@ const Update=()=>{
          
        }
      })
+     if(id===''){
+         alert("Please enter valid habit");
+     }
     console.log(newcol)
     // Update firebase data through their unique key
     try{
