@@ -1,6 +1,6 @@
 // Import all required things
 import React from 'react';
-// import "./Update.css"
+import "./Update.css"
 import { useEffect,useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FirDb } from '../Firebase';

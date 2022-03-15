@@ -3,7 +3,7 @@ import React  from "react";
 import { useEffect,useState } from "react";
 import { collection,addDoc, Firestore,getDocs,deleteDoc,doc } from 'firebase/firestore';
 import { FirDb } from "../Firebase";
-// import "./Status.css";
+import "./Status.css";
 import { Link } from "react-router-dom";
 
 

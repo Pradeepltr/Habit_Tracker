@@ -1,6 +1,6 @@
 // Import all required things for this page
 import React from 'react';
-// import "./Home.css";
+import "./Home.css";
 import { FirDb } from '../Firebase';
 import { collection,addDoc, Firestore,getDocs,deleteDoc,doc } from 'firebase/firestore';
 import { useEffect,useState } from 'react';
